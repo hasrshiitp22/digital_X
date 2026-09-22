@@ -1,0 +1,31 @@
+{
+
+  "compilerOptions": {
+    // File Layout
+    "target": "es2022",
+    "module": "nodenext",
+    "moduleResolution":"nodenext",
+  
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    
+    "types": ["node"],
+
+    "strict":true,
+    "esModuleInterop": true,
+
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+
+
+  },
+  "include":[
+    "src/**/*.ts",
+    "src/**/*.d.ts"
+  ],
+  "exclude":[
+    "node+module",
+    "dist"
+  ]
+}
