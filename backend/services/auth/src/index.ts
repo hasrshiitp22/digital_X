@@ -1,6 +1,8 @@
 import express from "express"
 import dotenv from "dotenv"
 import cookieParser from "cookie-parser"
+import { connect } from "node:http2"
+import { connectdb } from "./config/db.js"
 
 dotenv.config()
 
@@ -18,4 +20,5 @@ app.get('/',(req,res)=>{
 })
 app.listen(PORT,()=>{
     console.log(`auth Server running on http://localhost:${PORT}`)
+    connectdb()
 })
